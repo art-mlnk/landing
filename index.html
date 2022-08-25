@@ -20,11 +20,11 @@
 <nav>
     <ul class="header-navigation">
         <li class="header-navigation_item"><a href="#" class="header-navigation_link">HOME</a></li>
-        <li class="header-navigation_item"><a href="#" class="header-navigation_link">PROJECTS</a></li>
+        <li class="header-navigation_item"><a href="#projects" class="header-navigation_link">PROJECTS</a></li>
         <li class="header-navigation_item"><a href="#" class="header-navigation_link">MEASUREMENT</a></li>
         <li class="header-navigation_item"><a href="#" class="header-navigation_link">TEAM</a></li>
-        <li class="header-navigation_item"><a href="#" class="header-navigation_link">REVIEWS</a></li>
-        <li class="header-navigation_item"><a href="#" class="header-navigation_link">CONTACTS</a></li>
+        <li class="header-navigation_item"><a href="#reviews" class="header-navigation_link">REVIEWS</a></li>
+        <li class="header-navigation_item"><a href="#contacts" class="header-navigation_link">CONTACTS</a></li>
     </ul>
 </nav>
     <div class="header-number">
@@ -43,7 +43,7 @@
 </div>
 <div class="hero-overlay"></div>
 </section>
-<section class="projects">
+<section class="projects" id="projects">
     <div class="container projects-container">
         <ul class="projects-navigation">
             <li class="projects-navigation_item"><a href="#" class="projects-navigation_link">Rostov-on-Don, Admiral</a></li>
@@ -69,14 +69,14 @@
                         <p class="text attributes-text">Upon request</p>
                     </div>    
                     <div class="projects-slider">
-                        <button class="slider-arrow"><img src="images/arrow left.svg"></button>
+                        <button class="slider-arrow_left"><img src="images/arrow left.svg"></button>
                         <label for="btn1"></label>
                         <input class="slider-btn" type="radio" id="btn1" checked>
                         <label for="btn2"></label>
                         <input class="slider-btn" type="radio" id="btn2">
                         <label for="btn3"></label>
                         <input class="slider-btn" type="radio" id="btn3">
-                        <button class="slider-arrow"><img src="images/arrow right.svg"></button>
+                        <button class="slider-arrow_right"><img src="images/arrow right.svg"></button>
                     </div>
                 </div>
             </div>   
@@ -93,7 +93,7 @@
         </div>
         <img src="images/image 6.jpg" alt="working process" class="online-control-image">
         <button class="online-control_button-play"><img src="images/play.svg"></button>
-        <hr class="online-control-line">
+        <hr class="online-control-text-line">
         <p class="text online-control-text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
             Leave a request below and you will receive a link to the broadcast.</p>
         <form class="online-control-form">
@@ -117,9 +117,9 @@
     <div class="container types-of-repare-container">
         <h2 class="title types-of-repare-title">TYPES OF REPAIR</h2>
         <div class="types-of-repare-icon">
-            <div class="online-control-line"></div>
+            <div class="types-of-repare-line"></div>
             <img src="images/Vector repair.svg">
-            <div class="online-control-line"></div>
+            <div class="types-of-repare-line"></div>
         </div>
         <div class="types-of-repare-offers">
             <div class="redecorating">
@@ -206,7 +206,7 @@
                     >
                     <label for="checkbox" class="online-control-checkbox-text">I agree to the processing of personal data</label>
                 </div>
-                <button class="button online-control-button">Call the measurer</button>    
+                <button class="button types-of-repare-button">Call the measurer</button>    
             </form>
             <div class="types-of-repare-bottom-logo-text">
                 <img src="images/icon-pig.svg">
@@ -242,6 +242,110 @@
     </div>
     <div class="portfolio-overlay"></div>
 </section>
+<section class="clients" id="reviews">
+    <div class="container clients-container">
+        <div class="clients-heading-content">
+            <h2 class="title clients-title">our clients</h2>
+                <div class="clients-icon">
+                    <div class="clients-line"></div>
+                    <img src="images/clients-icon.svg">
+                    <div class="clients-line"></div>
+                </div>
+                <p class="text clients-heading-text">80% of our customers recommend us to their friends and family.</p>
+        </div>
+        <div class="clients-content">
+            <div class="clients-review clients-review_left">
+                <img src="images/fedosova.jpg" alt="client woman" class="clients-review-image_left">
+                <h3 class="title clients-review-title">Fedosova Maria Konstantinovna</h3>
+                <p class="text clients-review-text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                    to Georgia for its professionalism and approach.</p>
+                <p class="text clients-review-text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+                <div class="clients-review-bottom-block">
+                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" class="block-image"><span class="block-text">40 m2</span></div>
+                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" class="block-image"><span class="block-text">48 DAYS</span></div>
+                </div>
+            </div>
+            <div class="clients-review clients-review_center">                
+                <img src="images/afanasyev.jpg" alt="client man" class="clients-review-image_left">
+                <h3 class="title clients-review-title">Afanasyev Sergey Alexandrovich</h3>
+                <p class="text clients-review-text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                    to Georgia for its professionalism and approach.</p>
+                <p class="text clients-review-text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+                <div class="clients-review-bottom-block">    
+                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" class="block-image"><span class="block-text">90 м2</span></div>
+                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" class="block-image"><span class="block-text">128 DAYS</span></div>
+                </div>
+            </div>
+            <div class="clients-review clients-review_right">                
+                <img src="images/kiriev.jpg" alt="client man" class="clients-review-image_left">
+                <h3 class="title clients-review-title">Kiriev Egor Leonidovich</h3>
+                <p class="text clients-review-text">I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                    to Georgia for its professionalism and approach.</p>
+                <p class="text clients-review-text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+                <div class="clients-review-bottom-block">    
+                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" class="block-image"><span class="block-text">56 м2</span></div>
+                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" class="block-image"><span class="block-text">86 DAYS</span></div>
+                </div>    
+            </div>
+        </div>
+        <div class="clients-background-image">
+            <div class="clients-background-image_left"></div>
+            <div class="clients-background-image_right"></div>
+        </div>
+        <form class="clients-form">
+            <h3 class="clients-form-title">have any questions?</h3>
+            <label for="name-black-from" class="label clients-label_name">Name</label>
+                <input class="input clients-input_name" type="text" id="name-black-from" value="What is your name:">
+            <label for="phone-black-from" class="label clients-label_phone">Phone</label>
+                <input class="input clients-input_phone" type="text" id="phone-black-from" value="Your phone number:">
+            <label for="question-black-from" class="label clients-label_question">Question</label>
+                <input class="input clients-input_question" type="text" id="question-black-from" value="I want to know:">
+            <div class="checkbox clients-checkbox">
+                <input class="online-control-checkbox-input"
+                type="checkbox"
+                id="checkbox"
+                checked
+                >
+                <label for="checkbox" class="online-control-checkbox-text">I agree to the processing of personal data</label>
+            </div>
+            <button class="button clients-button">Submit</button>    
+        </form>  
+    </div>    
+</section>
+<section class="contacts" id="contacts">
+    <div class="contaier contacts-container">
+        <h2 class="title contacts-title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h2>
+        <div class="contacts-logo-group">
+            <a href="#"><img src="images/logo-mail.svg" class="contacts-logo"></a>
+            <a href="#"><img src="images/logo-inst.svg"></a>
+        </div>
+        <div class="contacts-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.513074683355!2d39.72317065061754!3d47.244960338696124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1661464400037!5m2!1sru!2sru" width="925" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="contacts-overlay"></div>
+</section>
 </main>
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="logo">
+            IC "Repair Design Project"
+        </div>
+<nav>
+    <ul class="header-navigation">
+        <li class="header-navigation_item"><a href="#" class="header-navigation_link">HOME</a></li>
+        <li class="header-navigation_item"><a href="#projects" class="header-navigation_link">PROJECTS</a></li>
+        <li class="header-navigation_item"><a href="#" class="header-navigation_link">MEASUREMENT</a></li>
+        <li class="header-navigation_item"><a href="#" class="header-navigation_link">TEAM</a></li>
+        <li class="header-navigation_item"><a href="#reviews" class="header-navigation_link">REVIEWS</a></li>
+        <li class="header-navigation_item"><a href="#contacts" class="header-navigation_link">CONTACTS</a></li>
+    </ul>
+</nav>
+    <div class="header-number">
+        +7 (928) 768-32-39
+    </div>
+        <button class="button header-button">Request a call</button>
+    </div>
+</footer>
 </body>
 </html>
