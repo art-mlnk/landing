@@ -880,17 +880,29 @@ body * {
     filter: opacity(10%);
 }
 
-.clients-form {
+.contacts {
+    height: 953px;
+    background-image: url(../images/image\ 7.2.png);
+    background-size: cover;
+    margin-top: -135px;
+    position: relative;
+}
+
+.contacts-container {
+    position: relative;
+    z-index: 2;
+    top: -200px;
+}
+
+.contacts-form {
     width: 883px;
     height: 445px;
     background-color: #131313;
-    position: relative;
-    top: -340px;
-    left: 200px;
+    margin-left: 500px;
     padding: 0 45px;
 }
 
-.clients-form-title {
+.contacts-form-title {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -904,28 +916,28 @@ body * {
 
 }
 
-.clients-label_name {
+.contacts-label_name {
     color: rgba(255, 255, 255, 0.5);
     position: relative;
     top: -20px;
     left: 97px;
 }
 
-.clients-label_phone {
+.contacts-label_phone {
     color: rgba(255, 255, 255, 0.5);
     position: relative;
     top: -20px;
     left: 80px;
 }
 
-.clients-label_question {
+.contacts-label_question {
     color: rgba(255, 255, 255, 0.5);
     position: relative;
     top: 48px;
     left: -550px;
 }
 
-.clients-input_name {
+.contacts-input_name {
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding-bottom: 3px;
@@ -936,7 +948,7 @@ body * {
     margin-bottom: 40px;
 }
 
-.clients-input_phone {
+.contacts-input_phone {
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding-bottom: 3px;
@@ -947,7 +959,7 @@ body * {
     margin-bottom: 40px;
 }
 
-.clients-input_question {
+.contacts-input_question {
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding-bottom: 3px;
@@ -957,32 +969,18 @@ body * {
     margin-left: 95px;
 }
 
-.clients-checkbox {
+.contacts-checkbox {
     color: #FFFFFF;
     margin-top: 46px;
     margin-left: 250px;
 }
 
-.clients-button {
+.contacts-button {
     width: 200px;
     height: 51px;
     position: relative;
     left: 280px;
     top: 50px;
-}
-
-.contacts {
-    height: 953px;
-    background-image: url(../images/image\ 7.2.png);
-    background-size: cover;
-    margin-top: -597px;
-    position: relative;
-    z-index: -1;
-}
-
-.contacts-container {
-    position: relative;
-    z-index: 2;
 }
 
 .contacts-title {
@@ -991,9 +989,8 @@ body * {
     line-height: 28px;
     color: #E3B873;
     text-align: center;
-    position: relative;
-    left: 650px;
-    padding-top: 274px;
+    margin-left: 650px;
+    margin-top: 52px;
 }
 
 .contacts-logo-group {
