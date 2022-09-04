@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Repair Design Project</title>
 </head>
 <body>
 <header class="header">
@@ -36,8 +36,10 @@
 <div class="container hero-container">
     <h1 class="title hero-title">Turnkey Repair in the city of <span class="hero-title-city">Rostov-on-Don</span></h1>
     <p class="text hero-text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
-    <button class="button hero-button">CALCULATE THE COST</button>
-    <button class="button-submit">SUBMIT YOUR APPLICATION</button>
+    <div class="hero-buttons">
+        <button class="button hero-button">CALCULATE THE COST</button>
+        <button class="button-submit">SUBMIT YOUR APPLICATION</button>
+    </div>
 </div>
 <div class="hero-overlay"></div>
 </section>
@@ -48,13 +50,20 @@
             <li class="projects-navigation_item"><a href="#" class="projects-navigation_link">Sochi Thieves</a></li>
             <li class="projects-navigation_item"><a href="#" class="projects-navigation_link">Rostov-on-Don Patriotic</a></li>
         </ul>
-        <img src="images/image 2.1.jpg" alt="photo apartment" class="projects-navigation-image">  
         <div class="projects-content">
             <div class="projects-content-text">
-                <h2 class="title projects-title">Completed projects</h2>
-                <p class="text projects-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                <div class="projects-content-text-image">
+                    <div class="projects-text-head-group">
+                        <h2 class="title projects-title">Completed projects</h2>
+                        <p class="text projects-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                    </div>    
+                    <div class="projects-navigation-image">
+                            <button class="projects-navigation-image_button"><img src="images/button_left.svg" alt="button left"></button>
+                            <button class="projects-navigation-image_button"><img src="images/button_right.svg" alt="button right"></button>
+                    </div>
+                </div>  
                 <div class="projects-attributes">
-                    <div>    
+                    <div class="projects-content-attributes-left">    
                         <h3 class="title projects-subtitle">City:</h3>
                         <p class="text attributes-text">Rostov-on-Don <br>LCD admiral</p>
                         <h3 class="title projects-subtitle">Repair time:</h3>
@@ -67,14 +76,14 @@
                         <p class="text attributes-text">Upon request</p>
                     </div>    
                     <div class="projects-slider">
-                        <button class="slider-arrow_left"><img src="images/arrow left.svg"></button>
+                        <button class="slider-arrow_left"><img src="images/arrow_left.svg" alt="arrow left"></button>
                         <label for="btn1"></label>
                         <input class="slider-btn" type="radio" id="btn1" checked>
                         <label for="btn2"></label>
                         <input class="slider-btn" type="radio" id="btn2">
                         <label for="btn3"></label>
                         <input class="slider-btn" type="radio" id="btn3">
-                        <button class="slider-arrow_right"><img src="images/arrow right.svg"></button>
+                        <button class="slider-arrow_right"><img src="images/arrow_right.svg" alt="arrow right"></button>
                     </div>
                 </div>
             </div>   
@@ -86,20 +95,24 @@
         <h2 class="title online-control-title">online control</h2>
         <div class="online-control-icon">
             <div class="online-control-line"></div>
-            <img src="images/Vector-icon.svg">
+            <img src="images/Vector-icon.svg" alt="camera surveillance icon">
             <div class="online-control-line"></div>
         </div>
-        <img src="images/image 6.jpg" alt="working process" class="online-control-image">
-        <button class="online-control_button-play"><img src="images/play.svg"></button>
+        <div class="online-control-image-block">
+            <div class="online-control-image"></div>
+            <button class="online-control_button-play"><img src="images/play.svg" alt="button_play" class="online-control-image_button-play"></button>
         <hr class="online-control-text-line">
         <p class="text online-control-text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
             Leave a request below and you will receive a link to the broadcast.</p>
+        </div>
         <form class="online-control-form">
-            <label for="name" class="label online-control-label">Name</label>
-                <input class="input online-control-input" type="text" id="name" value="What is your name:">
-            <label for="phone" class="label online-control-label">Phone</label>
-                <input class="input online-control-input" type="text" id="phone" value="Your phone number:">
-            <button class="button online-control-button">Submit</button>
+            <div class="online-control-form_content">
+                <label for="name" class="label online-control-label">Name</label>
+                    <input class="input online-control-input" type="text" id="name" value="What is your name:">
+                <label for="phone" class="label online-control-label">Phone</label>
+                    <input class="input online-control-input" type="text" id="phone" value="Your phone number:">
+                <button class="button online-control-button">Submit</button>
+            </div>
             <div class="checkbox online-control-checkbox">
                 <input class="online-control-checkbox-input"
                 type="checkbox"
@@ -116,14 +129,14 @@
         <h2 class="title types-of-repare-title">TYPES OF REPAIR</h2>
         <div class="types-of-repare-icon">
             <div class="types-of-repare-line"></div>
-            <img src="images/Vector repair.svg">
+            <img src="images/Vector_repair.svg" alt="work tools icon">
             <div class="types-of-repare-line"></div>
         </div>
         <div class="types-of-repare-offers">
             <div class="redecorating">
                 <img src="images/Redecorating.jpg" alt="redecorating">
                 <div class="redecorating-text">
-                    <div class="offers-top-rectangle"></div>
+                    <div class="offers-top-rectangle">
                     <h3 class="types-of-repare-text-title">Redecorating</h3>
                     <ul class="types-of-repare-list">
                         <li class="types-of-repare_item">Dismantling of old coatings</li>
@@ -135,12 +148,13 @@
                         <li class="types-of-repare_item">Replacing doors</li>
                     </ul>
                     <div class="offers-bottom-rectangle"><p class="rectangle-text">from 900 rub / m2</p></div>
+                    </div>
                 </div>        
             </div>
             <div class="overhaul">
                 <img src="images/Overhaul.jpg" alt="overhaul">
                 <div class="overhaul-text">
-                    <div class="offers-top-rectangle"></div>
+                    <div class="offers-top-rectangle">
                     <h3 class="types-of-repare-text-title">Overhaul</h3>
                     <ul class="types-of-repare-list">
                         <li class="types-of-repare_item">Dismantling of old coatings</li>
@@ -152,12 +166,13 @@
                         <li class="types-of-repare_item">Replacing doors</li>
                     </ul>
                     <div class="offers-bottom-rectangle"><p class="rectangle-text">from 1800 rub / m2</p></div>
+                    </div>
                 </div>
             </div>
             <div class="designer">
-                <img src="images/Designer Repair.jpg" alt="designer repair">
+                <img src="images/Designer_Repair.jpg" alt="designer repair">
                 <div class="designer-text">
-                    <div class="offers-top-rectangle"></div>
+                    <div class="offers-top-rectangle">
                     <h3 class="types-of-repare-text-title">Designer Repair</h3>
                     <ul class="types-of-repare-list">
                         <li class="types-of-repare_item">Dismantling of old coatings</li>
@@ -168,55 +183,57 @@
                         <li class="types-of-repare_item">Replacing sockets and switches</li>
                         <li class="types-of-repare_item">Replacing doors</li>
                     </ul>
+                    <div class="offers-bottom-rectangle"><p class="rectangle-text">from 4000 rub / m2</p></div>
+                    </div>
                 </div>
-                <div class="offers-bottom-rectangle"><p class="rectangle-text">from 4000 rub / m2</p></div>
             </div>
         </div>
         <div class="types-of-repare-bottom_content">
-            <img src="images/image 6.1.png" class="types-of-repare-image">
-            <div class="types-of-repare-bottom_content-text">
-                <div class="types-of-repare_numbers">
-                    <div class="types-of-repare_list-number">01</div>
-                    <div class="types-of-repare_list-number">02</div>
-                    <div class="types-of-repare_list-number">03</div>
-                    <div class="types-of-repare_list-number">04</div>
+            <div class="types-of-repare-bottom_list-content">
+                <div class="types-of-repare-bottom_content-text">
+                    <div class="types-of-repare_numbers">
+                    <ol class="types-of-repare-bottom_list">
+                        <li><div class="types-of-repare_list-number">01</div><span class="types-of-repare-bottom_item">Our specialist will arrive for measurements per day <br>contact, or appoint a date convenient for you</span></li>
+                        <li><div class="types-of-repare_list-number">02</div><span class="types-of-repare-bottom_item">Free metering</span></li>
+                        <li><div class="types-of-repare_list-number">03</div><span class="types-of-repare-bottom_item">Free consultation</span></li>
+                        <li><div class="types-of-repare_list-number">04</div><span class="types-of-repare-bottom_item">Get a cost estimate and <br>the timing of your future repairs</span></li>
+                    </ol>
+                    </div>
                 </div>
-                <ol class="types-of-repare-bottom_list">
-                    <li class="types-of-repare-bottom_item">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li>
-                    <li class="types-of-repare-bottom_item">Free metering</li>
-                    <li class="types-of-repare-bottom_item">Free consultation</li>
-                    <li class="types-of-repare-bottom_item">Get a cost estimate and <br>the timing of your future repairs</li>
-                </ol>
             </div>
             <form class="types-of-repare-form">
                 <h3 class="types-of-repare-form-title">Leave a request for free <br>departure of the measurer</h3>
-                <label for="name-black-from" class="label types-of-repare-label">Name</label>
-                    <input class="input types-of-repare-input" type="text" id="name-black-from" value="What is your name:">
-                <label for="phone-black-from" class="label types-of-repare-label">Phone</label>
-                    <input class="input types-of-repare-input" type="text" id="phone-black-from" value="Your phone number:">
-                <label for="email-black-from" class="label types-of-repare-label">Email</label>
-                    <input class="input types-of-repare-input" type="text" id="email-black-from" value="Your email">
+                <label for="name-black-form" class="label types-of-repare-label">Name</label>
+                    <input class="input types-of-repare-input" type="text" id="name-black-form" value="What is your name:">
+                <label for="phone-black-form" class="label types-of-repare-label">Phone</label>
+                    <input class="input types-of-repare-input" type="text" id="phone-black-form" value="Your phone number:">
+                <label for="email-black-form" class="label types-of-repare-label">Email</label>
+                    <input class="input types-of-repare-input" type="text" id="email-black-form" value="Your email">
                 <div class="checkbox types-of-repare-checkbox">
                     <input class="online-control-checkbox-input"
                     type="checkbox"
-                    id="checkbox"
+                    id="types-of-repare_checkbox"
                     checked
                     >
-                    <label for="checkbox" class="online-control-checkbox-text">I agree to the processing of personal data</label>
+                    <label for="types-of-repare_checkbox" class="online-control-checkbox-text">I agree to the processing of personal data</label>
                 </div>
                 <button class="button types-of-repare-button">Call the measurer</button>    
             </form>
+        </div>
             <div class="types-of-repare-bottom-logo-text">
-                <img src="images/icon-pig.svg">
+                <img src="images/icon-pig.svg" alt="piggy bank icon">
                 <p class="text types-of-repare-bottom-text">Help save 10 - 20% of the cost of materials</p>
             </div>
-        </div>
     </div>
 </section>
 <section class="portfolio">
     <div class="container portfolio-container">
         <div class="portfolio-content-text">
             <h2 class="title portfolio-title">We realize your wildest fantasies</h2>
+                <div class="portfolio-content-image">
+                    <button class="projects-navigation-image_button"><img src="images/button_left.svg" alt="button left"></button>
+                    <button class="projects-navigation-image_button"><img src="images/button_right.svg" alt="button right"></button>
+                </div>
             <ul class="portfolio-list">
                 <li class="portfolio-list_item-active">American classic</li>
                 <li class="portfolio-list_item">Empire</li>
@@ -232,10 +249,10 @@
             </ul>
         </div>
         <div class="portfolio-content-images">
-            <img src="images/image 5.jpg" alt="design example" class="portfolio-image_top">
-            <img src="images/image 5 (1).jpg" alt="design example 2" class="portfolio-image_left">
-            <img src="images/image 5 (2).jpg" alt="design example 3" class="portfolio-image_center">
-            <img src="images/image 5 (3).jpg" alt="design example 4" class="portfolio-image_bottom">
+            <img src="images/image_5.jpg" alt="design example" class="portfolio-image_top">
+            <img src="images/image_5_(1).jpg" alt="design example 2" class="portfolio-image_left">
+            <img src="images/image_5_(2).jpg" alt="design example 3" class="portfolio-image_center">
+            <img src="images/image_5_(3).jpg" alt="design example 4" class="portfolio-image_bottom">
         </div>
     </div>
     <div class="portfolio-overlay"></div>
@@ -246,7 +263,7 @@
             <h2 class="title clients-title">our clients</h2>
                 <div class="clients-icon">
                     <div class="clients-line"></div>
-                    <img src="images/clients-icon.svg">
+                    <img src="images/clients-icon.svg" alt="handshake icon">
                     <div class="clients-line"></div>
                 </div>
                 <p class="text clients-heading-text">80% of our customers recommend us to their friends and family.</p>
@@ -259,8 +276,8 @@
                     to Georgia for its professionalism and approach.</p>
                 <p class="text clients-review-text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
                 <div class="clients-review-bottom-block">
-                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" class="block-image"><span class="block-text">40 m2</span></div>
-                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" class="block-image"><span class="block-text">48 DAYS</span></div>
+                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" alt="proportions icon" class="block-image"><span class="block-text">40 m2</span></div>
+                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" alt="calendar icon" class="block-image"><span class="block-text">48 DAYS</span></div>
                 </div>
             </div>
             <div class="clients-review clients-review_center">                
@@ -270,8 +287,8 @@
                     to Georgia for its professionalism and approach.</p>
                 <p class="text clients-review-text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
                 <div class="clients-review-bottom-block">    
-                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" class="block-image"><span class="block-text">90 м2</span></div>
-                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" class="block-image"><span class="block-text">128 DAYS</span></div>
+                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" alt="proportions icon" class="block-image"><span class="block-text">90 м2</span></div>
+                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" alt="calendar icon" class="block-image"><span class="block-text">128 DAYS</span></div>
                 </div>
             </div>
             <div class="clients-review clients-review_right">                
@@ -281,8 +298,8 @@
                     to Georgia for its professionalism and approach.</p>
                 <p class="text clients-review-text">The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
                 <div class="clients-review-bottom-block">    
-                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" class="block-image"><span class="block-text">56 м2</span></div>
-                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" class="block-image"><span class="block-text">86 DAYS</span></div>
+                    <div class="bottom-block bottom-block-left"><img src="images/block-review-icon-size.svg" alt="proportions icon" class="block-image"><span class="block-text">56 м2</span></div>
+                    <div class="bottom-block bottom-block-right"><img src="images/block-review-icon-days.svg" alt="calendar icon" class="block-image"><span class="block-text">86 DAYS</span></div>
                 </div>    
             </div>
         </div>
@@ -293,30 +310,35 @@
     </div>    
 </section>
 <section class="contacts" id="contacts">
-    <div class="contaier contacts-container">
+    <div class="container contacts-container">
         <form class="contacts-form">
             <h3 class="contacts-form-title">have any questions?</h3>
-            <label for="name-black-from" class="label contacts-label_name">Name</label>
-                <input class="input contacts-input_name" type="text" id="name-black-from" value="What is your name:">
-            <label for="phone-black-from" class="label contacts-label_phone">Phone</label>
-                <input class="input contacts-input_phone" type="text" id="phone-black-from" value="Your phone number:">
-            <label for="question-black-from" class="label contacts-label_question">Question</label>
-                <input class="input contacts-input_question" type="text" id="question-black-from" value="I want to know:">
-            <div class="checkbox contacts-checkbox">
-                <input class="online-control-checkbox-input"
-                type="checkbox"
-                id="checkbox"
-                checked
-                >
-                <label for="checkbox" class="online-control-checkbox-text">I agree to the processing of personal data</label>
+            <div class="contacts-form_content">
+                <label for="name-form" class="label contacts-label_name">Name</label>
+                    <input class="input contacts-input_name" type="text" id="name-form" value="What is your name:">
+                <label for="phone-form" class="label contacts-label_phone">Phone</label>
+                    <input class="input contacts-input_phone" type="text" id="phone-form" value="Your phone number:">
+                <label for="question-form" class="label contacts-label_question">Question</label>
+                    <input class="input contacts-input_question" type="text" id="question-form" value="I want to know:">
+                <div class="checkbox contacts-checkbox">
+                    <input class="online-control-checkbox-input"
+                    type="checkbox"
+                    id="contacts_checkbox"
+                    checked
+                    >
+                    <label for="contacts_checkbox" class="online-control-checkbox-text">I agree to the processing of personal data</label>
+                </div>
+                <button class="button contacts-button">Submit</button>
+            </div>    
+        </form>
+        <div class="contacts-bottom-content">
+            <img src="images/image_7.1.jpg" alt="map" class="contacts-map-image"> 
+            <h2 class="title contacts-title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h2>
+            <div class="contacts-logo-group">
+                <a href="mailto:info@skillfactory.ru"><img src="images/logo-mail.svg" alt="mail logo" class="contacts-logo"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/logo-inst.svg" alt="instargam logo"></a>
             </div>
-            <button class="button contacts-button">Submit</button>    
-        </form>  
-        <h2 class="title contacts-title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h2>
-        <div class="contacts-logo-group">
-            <a href="mailto:info@skillfactory.ru"><img src="images/logo-mail.svg" class="contacts-logo"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/logo-inst.svg"></a>
-        </div>
+        </div> 
         <div class="contacts-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.513074683355!2d39.72317065061754!3d47.244960338696124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1661464400037!5m2!1sru!2sru" width="925" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
