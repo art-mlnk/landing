@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <script defer src="./scripts/script.js"></script>
     <title>Repair Design Project</title>
 </head>
 <body>
@@ -45,49 +46,56 @@
 </section>
 <section class="projects" id="projects">
     <div class="container projects-container">
-        <ul class="projects-navigation">
-            <li class="projects-navigation_item"><a href="#" class="projects-navigation_link">Rostov-on-Don, Admiral</a></li>
-            <li class="projects-navigation_item"><a href="#" class="projects-navigation_link">Sochi Thieves</a></li>
-            <li class="projects-navigation_item"><a href="#" class="projects-navigation_link">Rostov-on-Don Patriotic</a></li>
-        </ul>
-        <div class="projects-content">
-            <div class="projects-content-text">
-                <div class="projects-content-text-image">
-                    <div class="projects-text-head-group">
-                        <h2 class="title projects-title">Completed projects</h2>
-                        <p class="text projects-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
-                    </div>    
-                    <div class="projects-navigation-image">
-                            <button class="projects-navigation-image_button"><img src="images/button_left.svg" alt="button left"></button>
-                            <button class="projects-navigation-image_button"><img src="images/button_right.svg" alt="button right"></button>
-                    </div>
-                </div>  
-                <div class="projects-attributes">
-                    <div class="projects-content-attributes-left">    
-                        <h3 class="title projects-subtitle">City:</h3>
-                        <p class="text attributes-text">Rostov-on-Don <br>LCD admiral</p>
-                        <h3 class="title projects-subtitle">Repair time:</h3>
-                        <p class="text attributes-text">81 m<sup>2</sup></p>
-                    </div>
-                    <div class="projects-content-attributes-right">
-                        <h3 class="title projects-subtitle">apartment area:</h3>
-                        <p class="text attributes-text apartment">3.5 months</p>
-                        <h3 class="title projects-subtitle">Repair Cost:</h3>
-                        <p class="text attributes-text">Upon request</p>
-                    </div>    
-                    <div class="projects-slider">
-                        <button class="slider-arrow_left"><img src="images/arrow_left.svg" alt="arrow left"></button>
-                        <label for="btn1"></label>
-                        <input class="slider-btn" type="radio" id="btn1" checked>
-                        <label for="btn2"></label>
-                        <input class="slider-btn" type="radio" id="btn2">
-                        <label for="btn3"></label>
-                        <input class="slider-btn" type="radio" id="btn3">
-                        <button class="slider-arrow_right"><img src="images/arrow_right.svg" alt="arrow right"></button>
-                    </div>
-                </div>
-            </div>   
+        <div>
+            <ul class="projects-navigation">
+              <li><a class="projects-navigation_item active" href="#">Rostov-on-Don, Admiral</a></li>
+              <li><a class="projects-navigation_item" href="#">Sochi Thieves</a></li>
+              <li><a class="projects-navigation_item" href="#">Rostov-on-Don Patriotic</a></li>
+            </ul>
         </div>
+          <img class="projects-content-image" src="./images/image_2.1.jpg" alt="completed projects photo">
+        <aside>
+            <h2 class="projects-content-text">
+              Completed <br>projects
+            </h2>
+            <p class="projects-text">
+              Only a small part of the work performed by our company is presented <br>on the site. 
+              For 14 years on in the construction <br>market we have made happy more than 1000 families
+            </p>
+            <table class="projects-content-table">
+              <thead>
+                <tr>
+                  <td>City:</td>
+                  <td>Apartment area:</td>
+                </tr>
+              </thead> 
+              <tbody>
+                <tr>
+                  <td class="city">Rostov-on-Don <br>LCD admiral</td>
+                  <td class="area">81 m2</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="projects-content-table">
+              <thead>
+                <tr>
+                  <td>Repair time:</td>
+                  <td>Repair Cost:</td>
+                </tr>
+              </thead> 
+              <tbody>
+                <tr>
+                  <td class="repair-time">3.5 months</td>
+                  <td>Upon request</td>
+                </tr>
+              </tbody>
+            </table>
+            <img class="slider-arrow_left" src="./images/arrow_left.svg" alt="left arrow">
+            <img class="dots btn1" src="./images/light-dot.svg" alt="dot left">
+            <img class="dots btn2" src="./images/dark_dot.svg" alt="dot center">
+            <img class="dots btn3" src="./images/dark_dot.svg" alt="dot right">
+            <img class="slider-arrow_right" src="./images/arrow_right.svg" alt="right arrow">
+        </aside>
     </div>
 </section>
 <section class="online-control">
